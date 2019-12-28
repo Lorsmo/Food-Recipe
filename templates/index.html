@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Recipe Rating</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="../static/css/style.css">
+
+</head>
+
+<body>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12 jumbotron text-center">
+        <h1>Recipe Rating</h1>
+        <p>Welcome to the recipe rating dashboard</p>
+      </div>
+    </div>
+    <section id="portfolio">
+    <div class="row">
+      <div class="col-lg-4 col-sm-6">
+        <a class="portfolio-box" href="fruits.html">
+          <img class="img-fluid" src="../static/images/fruits.jpg" alt="">
+          <div class="portfolio-box-caption">
+            <div class="project-category text-dark-50">
+              Category
+            </div>
+            <div class="project-name">
+              fruits
+            </div>
+          </div>
+        </a>
+      </div>
+      <div class="col-lg-4 col-sm-6">
+        <a class="portfolio-box" href="img/portfolio/fullsize/2.jpg">
+          <img class="img-fluid" src="../static/images/vegetables.jpg" alt="">
+          <div class="portfolio-box-caption">
+            <div class="project-category text-dark-50">
+              Category
+            </div>
+            <div class="project-name">
+              Vegetables
+            </div>
+          </div>
+        </a>
+      </div>
+      <div class="col-lg-4 col-sm-6">
+        <a class="portfolio-box" href="img/portfolio/fullsize/3.jpg">
+          <img class="img-fluid" src="../static/images/condiments.jpg" alt="">
+          <div class="portfolio-box-caption">
+            <div class="project-category text-dark-50">
+              Category
+            </div>
+            <div class="project-name">
+              condiments
+            </div>
+          </div>
+        </a>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-4 p-0">
+      </div>
+      <div class="col-md-4 p-0">
+      </div>
+      <div class="col-md-4 p-0">
+      </div>
+    </div>
+
+    <button type="button" id="btnAdd" value="Add" onclick="addItem()"></button>
+   
+  </div>
+  <script src="app.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.5.0/d3.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+  <script src="https://d3js.org/d3.v5.min.js"></script>
+  <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+
+</body>
+
+</html>
