@@ -73,3 +73,29 @@ thead {
     border-radius: 50%;
 }
 
+h1 {
+    font-family: "Times New Roman", Times, serif;
+    font-size: 70px;
+    font-style: italic;
+  }
+
+.navbar-brand {
+    border-radius: 3rem;
+    padding: 5px;
+}
+
+.profile {
+    border-radius: 45%;
+    width: 15%;
+}
+
+.border {
+    border-color: orange !important;
+    border-width: 2px !important;
+    background-color: rgba(0, 0, 0, 0.297);
+    color: white;
+}
+
+a[href^="mailto"] { color: yellow; }
+
+a[href^="mailto"]:hover:after { content: " > " attr(title); }
