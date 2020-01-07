@@ -1,5 +1,6 @@
 body {
-    background: linear-gradient(rgba(240, 127, 35, 0.952), rgba(0, 0, 0, 0.932));
+    background-image: linear-gradient(rgba(240, 127, 35, 0.552), rgba(0, 0, 0, 0.932)),
+    url("../images/bg_deep_dishes.jpg");
     background-size: contain;
     background-attachment: fixed;
 }
@@ -66,4 +67,9 @@ thead {
     background-color: yellow;
 }
      
+.d-block {
+    height: 300px;
+    width: 200px;
+    border-radius: 50%;
+}
 
