@@ -1,0 +1,27 @@
+WARNING:tensorflow:From /usr/local/lib/python3.6/dist-packages/gpt_2_simple/src/sample.py:17: where (from tensorflow.python.ops.array_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use tf.where in 2.0, which has the same broadcast rule as np.where
+WARNING:tensorflow:From /usr/local/lib/python3.6/dist-packages/gpt_2_simple/src/memory_saving_gradients.py:62: get_backward_walk_ops (from tensorflow.contrib.graph_editor.select) is deprecated and will be removed after 2019-06-06.
+Instructions for updating:
+Please use tensorflow.python.ops.op_selector.get_backward_walk_ops.
+Loading checkpoint models/355M/model.ckpt
+INFO:tensorflow:Restoring parameters from models/355M/model.ckpt
+  0%|          | 0/1 [00:00<?, ?it/s]Loading dataset...
+100%|¦¦¦¦¦¦¦¦¦¦| 1/1 [04:58<00:00, 298.54s/it]
+dataset has 52715907 tokens
+Training...
+[10 | 19.06] loss=2.24 avg=2.24
+[20 | 27.91] loss=2.44 avg=2.34
+[30 | 36.78] loss=2.68 avg=2.45
+[40 | 45.62] loss=2.44 avg=2.45
+[50 | 54.47] loss=2.28 avg=2.42
+[60 | 63.33] loss=2.58 avg=2.45
+[70 | 72.18] loss=2.15 avg=2.40
+[80 | 81.02] loss=1.85 avg=2.33
+[90 | 89.87] loss=2.09 avg=2.30
+[100 | 98.72] loss=2.57 avg=2.33
+======== SAMPLE 1 ========
+end-of-text|>NAME:beef and tomatoes and basil  ricotta|DESC:an autumn dish from the "paleo family cookbook".  it has a wonderful sweet and savory flair.   i've never had this before, but i tried it a few mornings ago and it was soooooo delicious that i had to do it again!|INGREDIENTS:horseradish, onions, peppers, garlic cloves, thyme, dried thyme, thyme, flour, salt, black pepper, salt-free pepper, dried thyme extract, pepper, ground red pepper, water, whole wheat pasta, mozzarella cheese, cooked chicken breast, whole wheat creole sauce, salt, black pepper|STEPS:in large bowl , toss tomatoes and basil with 2 tablespoons oil, season , reduce the heat to medium , stir in mushrooms, toss well, reserve 2 tablespoons tomato sauce , 1 tablespoon olive oil , and 1 tablespoon flour for topping, stir in thyme, mix , toss well, season chicken with black pepper , salt and black pepper, add pasta , 3 cups sauce , 3 tablespoons each seasoning salt and black pepper, cook , stirring , until bubbly, in a small bowl , whisk together the 2 tablespoons thyme, set aside , and stir in 1 cup broth , 1 egg , salt & pepper, stir together well, stir in cheese and 2 tablespoons flour, pour sauce over pasta and sprinkle generously with thyme, season with salt & pepper, top with remaining pasta, top with remaining mushrooms and thyme leaves, toss a little fresh thyme leaves with 1 teaspoon thyme and seasonings, use fork to scrape sauce off bottom of pan, sprinkle a few drops cornstarch , stirring to coat , and add chicken breast , 2 1 / 3 cups water , 2 teaspoons thyme , and 1 teaspoon fresh thyme, toss all of these meals into a saucepan and simmer for 5 minutes, remove from heat and let stand until very tender and bubbly, use a slotted spoon to transfer the mixture to a large bowl , and , while whisking , whisk sauce around until almost bubbly, add 1 teaspoon egg , 1 / 4 cup wine , thyme , thyme, thyme leaves , and 1-2 teaspoons cornstarch, stir well to combine , and pour into warm , dryened pan, heat oil in saucepan over med heat, fry onion, garlic , 2 teaspoon thyme , 1 / 2 cup thyme , 1 tablespoon thyme leaves , and 1 tablespoon thyme marinade in oil in heavy saucepan, stir all of these juices together (a few drops thyme marinade may be added on top of the chicken pieces , or 2 tablespoons thyme marinade added on top of the mushrooms, heat over medium heat, turn onion and garlic , and saute gently till tender and translucent, add thyme 1 / 2 teaspoon thyme marinade, stir well, toss mushrooms, add thyme marinade to saucepan and bring to a boil, boil for 15 minutes, add thyme , thyme , thyme leaf , and thyme marinade, stir , add cheese , and cook , stirring constantly , for 15 minutes or until cheese melted (you can season with more thyme , thyme marinade , thyme herbs , and thyme leaves), stir again, add mushrooms to mushrooms , and mix well, pour into baking dish , sprinkle with thyme marinade, stir to combine , and put into oven for about 2 hours, eat <|endoftext|>NAME:beef and onions  ricochet|DESC:this was on the menu of a friend's mom when she was growing up.  mine are from the menu in a letter from my mom.  these are a quick meal as they come together very fast.  great leftovers too.  this is a great summer favorite.|INGREDIENTS:ground beef, onion, corn, flour, garlic cloves, salt and pepper, salt & pepper|STEPS:combine all ingredients in a big bowl, stir and season well, serve cold with bread or pasta, or as an appetizer with veggies and potatoes|INGREDIENTS:ground beef, vegetable oil, garlic cloves, salt & pepper, flour, salt, white wine vinegar, butter, sliced onions, green pepper, fresh cilantro, green pepper, ground ginger, chopped green cabbage, chopped mushrooms, dried tarragon, chopped bell peppers and chili powder, worcestershire sauce, ground mustard& mayonnaise, brown sauce, worcestershire sauce, chili powder, cayenne pepper, salt & fresh ground pepper and pepper, toppings of choice|STEPS:first thing i make when i get out the fridge is check this out. you're not going to believe this but it is really easy.|INGREDIENTS:ground beef, onion, corn, flour, salt & pepper, garlic, onions,
+
+[110 | 131.57] loss=2.29 avg=2.33
+[120 | 140.40] loss=2.65 avg=2.35

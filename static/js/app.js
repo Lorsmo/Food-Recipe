@@ -1,47 +1,92 @@
+function docsearch() {
 
-//----------------------------------------------------------------------------
-//function addItem(){
-        //var li = document.createElement("LI");  
-        //var input = document.getElementById("btnAdd");
-        //li.innerHTML = input.value;
-        //input.value = "";
-//
-        //document.getElementById("faves").appendChild(li);
-//}
-//
-//input.on("click", addItem());
+  var inputElement1 = d3.select("#word-search2");
+  var js_search_term = inputElement1.property("value");
+  console.log(js_search_term);
 
-//d3.selectAll("#btnAdd").on("click", function() {
-////  // What will be logged out? What is `this` in this case?
-  //console.log(this.value);
-  //var item = d3.select("ul").append("li");
-  //item.text(this.value)
-////  // Answer: It will console log the `button` element.
-//});
-//
-//
-//d3.selectAll("li").on("click", function() {
-//  // you can select the element just like any other selection
-//  var listItem = d3.select(this);
-//  listItem.style("color", "blue");
-//
-//  var listItemText = listItem.text();
-//  console.log(listItemText);
-//});
+  d3.json(`/readfull/${js_search_term}`).then((response) => {
+      console.log('ran search.');
+      console.log(response);
 
-$(document).ready(function() {
-        $("#btnFetch").click(function() {
-          // disable button
-          $(this).prop("disabled", true);
-          // add spinner to button
-          $(this).html(
-            `<span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span> Loading...`
-          );
+       var tbody = d3.select(".table").select("tbody");
+       tbody.html("");
+       response.forEach((x) => {
+
+          var row = tbody.append("tr");
+          
+          Object.entries(x).forEach(([key, value]) => {
+            //if(key == '_dir' || key == 'filename' || key == 'date' || key == 'president' || key == 'title'){ 
+            if(key == 'name'){
+                var cell = row.append("td");
+                cell.text(value);
+            }
+         });
+      });
+
+      $("tr:not(:has(th))").mouseover(function () {
+        $(this).addClass("hover");
         });
+ 
+      $("tr:not(:has(th))").mouseleave(function () {
+        $(this).removeClass("hover");
+        });
+
+    });
+};
+
+
+
+// jQuery script
+$(document).ready(function(){
+  $("div.docsList table").delegate('tr', 'click', function() {
+      var currentRow=$(this).closest("tr"); // get the current row
+      var fp1=currentRow.find("td:eq(0)").text(); // get current row 1st TD value
+      var fp2=currentRow.find("td:eq(2)").text();
+      var js_filepath = fp1.concat('/', fp2, '.txt')
+
+
+      $.ajax({
+        url : js_filepath,
+        dataType: "text",
+        success : function (data) {
+            //$(".gfg").html(data);
+            // var text = d3.select(".gfg").select("p");
+            // text.html("")
+            document.getElementById("fulltext").innerHTML = ""
+            $("#fulltext").append(`${data}`)
+        }
+      });
+
     });
 
-// When the user clicks on <div>, open the popup
-function myFunction() {
-        var popup = document.getElementById("myPopup");
-        popup.classList.toggle("show");
-      }
+  //  $("tr:not(:has(th))").mouseover(function () {
+  //      $(this).addClass("hover");
+  //      });
+
+  //  $("tr:not(:has(th))").mouseleave(function () {
+  //      $(this).removeClass("hover");
+  //      });
+      
+  $( function() {
+      $( "#tabs" ).tabs();
+      plistsetup();
+  } );
+
+});
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

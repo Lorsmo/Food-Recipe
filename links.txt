@@ -1,0 +1,29 @@
+1.) https://www.kaggle.com/shuyangli94/food-com-recipes-and-user-interactions
+2.) https://drive.google.com/open?id=1PHTXbT_oA7mz_cEe4Vc2jPxr7jLlkSJ0
+
+https://github.com/nshepperd/gpt-2
+https://analyticsindiamag.com/how-to-get-started-with-openais-gpt-2-for-text-generation/
+https://medium.com/@ngwaifoong92/beginners-guide-to-retrain-gpt-2-117m-to-generate-custom-text-content-8bb5363d8b7f
+https://blog.floydhub.com/gpt2/
+
+https://pmbaumgartner.github.io/blog/gpt2-jokes/
+**https://colab.research.google.com/drive/1VLG8e7YSEwypxU-noRNhsv5dW4NfTGce
+
+https://github.com/minimaxir/gpt-2-simple
+https://github.com/minimaxir/gpt-2-simple/blob/master/README.md
+
+https://towardsdatascience.com/using-word2vec-to-analyze-news-headlines-and-predict-article-success-cdeda5f14751
+https://heartbeat.fritz.ai/coreml-with-glove-word-embedding-and-recursive-neural-network-part-2-d72c1a66b028
+https://towardsdatascience.com/learn-word2vec-by-implementing-it-in-tensorflow-45641adaf2ac?
+https://machinelearningmastery.com/develop-word-embedding-model-predicting-movie-review-sentiment/
+
+https://stackoverflow.com/questions/45312377/how-to-one-hot-encode-from-a-pandas-column-containing-a-list
+
+
+***https://docs.conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html
+
+
+
+* Due to GPT-2's architecture, it scales up nicely with more powerful GPUs. For the 124M model, if you want to train for longer periods of time, GCP's P100 GPU is about 3x faster than a K80/T4 for only 3x the price, making it price-comparable (the V100 is about 1.5x faster than the P100 but about 2x the price). The P100 uses 100% of the GPU even with `batch_size=1`, and about 88% of the V100 GPU.
+* If you have a partially-trained GPT-2 model and want to continue finetuning it, you can set `overwrite=True` to finetune, which will continue training and remove the previous iteration of the model without creating a duplicate copy. This can be especially useful for transfer learning (e.g. heavily finetune GPT-2 on one dataset, then finetune on other dataset to get a "merging" of both datasets).
+* If your input text dataset is massive (>100 MB), you may want to preencode and compress the dataset using `gpt2.encode_dataset(file_path)`. THe output is a compressed `.npz` file which will load much faster into the GPU for finetuning.

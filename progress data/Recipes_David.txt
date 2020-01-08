@@ -1,0 +1,64 @@
+Vegetarian Lunch
+
+|NAME:spanish rice pilaf|DESC:a delicious side dish that combines two of my favourite foods, rice and lentils.
+|INGREDIENTS:['onion', 'white rice', 'lentils', 'water', 'salt', 'pepper', 'pecorino romano cheese', 'sour cream']
+|STEPS:['cook rice according to package instructions', 'while rice is cooking , prepare lentils according to package instructions', 
+'heat a large nonstick skillet on stovetop', 'add onion and saute until softened , about 3 minutes', 'add lentils and water , 
+cover and cook 10 minutes', 'add salt , pepper , and cheese , tossing until cheese is melted', 
+'serve with sour cream and additional grated cheese']
+====================
+
+|NAME:baked baby carrots and yellow squash
+|DESC:the name says it well.  something special, something special, something simple.  
+i often make this dish when i have something new to do with baby carrots that don't require much cooking.  
+i usually double the ingredients, but we used small baby carrots and yellow squash.  
+i have never tried to add salt to the recipe, but i suspect that this would work well if you did.
+|INGREDIENTS:['baby carrots', 'yellow squash', 'butter', 'salt', 'pepper']
+|STEPS:['preheat oven to 350 degrees', 'place the vegetables in a baking dish , and pour in enough butter to cover', 
+'dot the top with the butter', 'bake until the vegetables are tender and the butter has melted', 'add salt and pepper to taste']
+====================
+
+|NAME:mushrooms with garlic clove and rosemary|DESC:easy and delicious.  i was looking for something to use up some fresh mushrooms and was surprised at what i found.  thanks to kathy for the review and i have made this several times since.  i don't usually add sherry and i don't think i add dried either.  i make this with fresh mushrooms and add salt and pepper if i have them fresh, i just add salt and pepper since i don't think it gives the dish a great flavor.  i used 1/2 cup butter and 1/2 c butter and 1/4 c butter instead of margarine since i used margarine.  i also used the fresh rosemary and garlic after it was already dried.  i also used a small pan instead of frying the mushrooms.  if you do use fresh rosemary, use the 2 tablespoons butter to brown the rosemary.|INGREDIENTS:['fresh mushrooms', 'butter', 'salt', 'pepper', 'fresh rosemary']|STEPS:['in a small frying pan , saute the mushrooms and garlic in 1 / 4 cup of the butter for about 4 minutes', 'add salt and pepper and rosemary and cook until they are tender', 'transfer to individual serving dishes or serve on individual plates with the butter over them', 'enjoy !']
+====================
+
+|NAME:mustard greens salad|DESC:yummy! i use the mustard greens for a different flavor!|INGREDIENTS:['mustard greens', 'paprika', 'salt', 'pepper', 'oil', 'red wine vinegar', 'garlic', 'mustard powder', 'apple cider vinegar', 'carrots', 'celery', 'onion', 'celery leaves', 'sliced almonds', 'fresh parsley']|STEPS:['wash greens and dry well', 'place greens , paprika , salt , pepper , oil and vinegar in food processor', 'cover and process until greens are finely chopped', 'add garlic , mustard , apple cider vinegar , carrots , celery , onion , celery leaves , almonds , parsley , and parsley leaves', 'toss gently to coat', 'chill 30 minutes before serving']
+====================
+
+|NAME:fluffy fudge cookies
+|DESC:if you enjoy fudge, you'll love these cookies!
+|INGREDIENTS:['flour', 'baking soda', 'salt', 'brown sugar', 'margarine', 'nuts', 'milk', 'sweetened condensed milk', 
+'vanilla extract', 'powdered sugar', 'unsalted butter', 'powdered sugar']
+|STEPS:['preheat oven to 375 degrees fahrenheit', 'combine flour , baking soda , salt and brown sugar', 
+'set aside', 'cream margarine , brown sugar , margarine , nuts , milk , sweetened condensed milk and 
+vanilla extract and beat until light and fluffy', 'stir in flour mixture', 'fill greased muffin tins 2 / 3 full', 
+'bake in preheated oven until light brown around the edges , about 18 to 20 minutes', 'remove cookies to rack to cool completely', 
+'frosting: stir all ingredients until smooth', 'spread on cooled cookies']
+====================
+
+
+
+
+
+
+Curiouser, and Curioser, and Curioser
+
+|NAME:dijon mustard brown sugar glazed pancake
+|DESC:a recipe from our local mexican restaurant. we like it toasted on french bread.
+|INGREDIENTS:['corn syrup', 'dijon mustard', 'brown sugar', 'dried cranberries', 'egg', 'milk', 'pepper', 
+'baking powder', 'salt', 'white bread', 'butter', 'brown sugar', 'vanilla', 'egg yolk', 'milk', 'pancake syrup', 'corn syrup', 'water', 'honey', 'dried cranberries', 'pecans', 'bouillon powder', 'cinnamon', 'cayenne pepper', 'lemon juice', 'mayonnaise', 'dijon mustard', 'salt', 'pepper', 'baking soda', 'egg', 'milk', 'pecans', 'flour', 'sugar', 'butter', 'brown sugar', 'vanilla', 'egg yolk', 'milk', 'pancake syrup', 'corn syrup', 'water', 'dried cranberries', 'pecans', 'bouillon powder', 'cinnamon', 'salt', 'pepper', 'lemon juice', 'mayonnaise', 'dijon mustard', 'salt', 'pepper', 'baking soda', 'water', 'honey', 'dried cranberries', 'pecans', 'bouillon cubes', 'sea salt', 'pepper', 'baking powder', 'salt']|STEPS:['in a small saucepan , combine the corn syrup , mustard , sugar , cranberries , egg , milk , pepper , baking powder and salt', 'heat to boiling , stirring constantly', 'reduce heat to low and simmer , uncovered , 5 minutes', 'remove from the heat and let stand 5 minutes', 'in a large bowl , beat
+====================
+
+|NAME:elephant sypham|DESC:this is from the bhg website. the book says this dessert can be served with a mint sauce on the side, or with vanilla ice cream, whipped cream, or with a sweetened whipped cream.|INGREDIENTS:['seafood mousse', 'light cream', 'peanut butter', 'sweetened condensed milk', 'toasted almond', 'graham cracker crumbs', 'coconut', 'peanut butter chips']|STEPS:['for the mousse , in a large mixing bowl , beat the cream with the peanut butter , sweetened condensed milk , and 1 / 2 cup of the almonds', 'add the graham cracker crumbs , coconut , and remaining blanched almonds', 'beat well', 'pour half of the mousse into individual dessert dishes', 'cover and refrigerate for 2 hours or until serving time', 'top with remaining whipped cream , and sprinkle with additional almonds', 'garnish with toasted chocolate chips if desired']
+====================
+
+|NAME:mustard naan bread|DESC:this recipe was printed in the "the jewish jewellah" by a jeweller who had recently moved to the usa.  he told me it was the best naan bread recipe he had ever made.  you can use canned naan.  if you're not a naan bread lover, you may use all-purpose flour and some baking powder.|INGREDIENTS:['milk', 'salt', 'bread flour', 'eggs', 'sugar', 'salt', 'baking powder', 'baking soda', 'ground cinnamon', 'ground nutmeg', 'ground cloves', 'salt', 'nutmeg', 'vegetable oil', 'warm water', 'butter', 'vinegar', 'corn syrup', 'sugar', 'white honey', 'powdered sugar', 'vanilla', 'almond extract', "confectioners' sugar", 'cinnamon', 'boiling water', 'butter', 'raisins']|STEPS:['stir the milk into the salt', 'mix the flour , sugar , eggs , salt , baking powder , baking soda , cinnamon , nutmeg , cloves , and salt together', 'stir in the oil , water , butter , and vinegar until well blended', 'stir together the corn syrup , sugar , honey , vanilla , oil , and raisins', 'stir into the flour mixture', 'grease a loaf pan and pour in the dough', 'bake for 1 hour at 350 , rotating the pan after about 40 minutes', 'cool for 10 minutes before removing to a wire rack to cool completely', 'if you like , you can use a bread machine to mix the dough , then transfer to a bowl and cover with plastic wrap', 'store in the refrigerator for up to a week']
+====================
+
+|NAME:pizza doughnut|DESC:i am a big fan of pizza doughnuts and pizza by now i have my own version.  i found this recipe on a recipe card somewhere and have made it a few times since then.  now that i have my own pizza i make it a lot! prep time does not include time to make your own.|INGREDIENTS:['dry yeast', 'warm water', 'sugar', 'flour', 'salt', 'warm water', 'sour cream', 'eggs', 'oil', 'vinegar', 'salt', 'cayenne', 'paprika', 'onion', 'egg yolks', 'warm water']|STEPS:['in a large bowl , stir together the dry yeast , water , sugar , flour , salt , and 1 / 4 cup of sugar', 'let stand 5 minutes', 'stir in the remaining sugar , sour cream , eggs , oil , vinegar , salt , and cayenne', 'beat for 2 minutes', 'stir in the remaining sugar , yeast mixture , paprika , onion , and another 1 / 4 cup of sugar', 'stir until dough is smooth and elastic', 'divide dough into 12 balls', 'roll each ball into a 1 / 8-inch-thick circle', 'place on greased baking sheet', 'cover with plastic wrap and let rise in warm , draft-free place for 1 hour', 'bake at 400 degrees for 15 minutes or until golden brown', 'cool on baking sheet for 10 minutes', 'use a sharp knife to loosen doughnuts from baking sheet', 'serve warm with warm sour cream , guacamole , and salsa']
+====================
+
+|NAME:santorini potatos|DESC:this recipe is from katherine mcllhen's latest cookbook called "the ultimate vegetarian cookbook". i don't know how to say it, i love this recipe. it is a very quick and easy recipe, and includes many nice toppings.|INGREDIENTS:['potato', 'green pepper', 'red onion', 'ground beef', 'olive oil', 'mixed italian herbs', 'salt and pepper', 'dried oregano', 'garlic clove', 'dried basil', 'sage', 'garlic powder', 'milk', 'parsley', 'parmesan cheese', 'parmesan cheese']|STEPS:['brown ground beef and season with some salt and pepper', 'drain excess grease', 'heat oil in a nonstick skillet or deep fryer', 'saute onion , green pepper , red pepper and red pepper', 'drain well', 'add to onion / pepper mixture', 'add all other ingredients to mixture and mix well', 'let sit for 10 minutes', 'bake at 350 degrees for 1 hour']
+====================
+
+|NAME:stuffed shells|DESC:these are great stuffed shells, filled with goodies, but still good. they make a nice appetizer for a party or get together.|INGREDIENTS:['sour cream', 'salt', 'pepper', 'butter', 'milk', 'substituted cream cheese', 'parmesan cheese', 'eggs', 'sharp cheddar cheese', 'paprika', 'lemon juice', 'corn flakes', 'cornflakes', 'red bell pepper', 'black olives']|STEPS:['in a small bowl , stir together sour cream , salt , and pepper', 'set aside', 'in a large bowl , beat butter and milk with an electric mixer until smooth', 'add sour cream mixture and beat until well blended', 'add cream cheese , parmesan , eggs , cheddar , paprika , and lemon juice', 'mix well', 'stir in cornflakes , red pepper , black olives , and semisweet morsels', 'spoon 1 / 3 cup of mixture into each of 8 greased 8 inch square baking dishes', 'bake at 350 for 15 minutes or until set', 'while hot , remove from the oven', 'let stand a few minutes', 'serve immediately', 'if desired , serve with sour cream , if desired']
+====================

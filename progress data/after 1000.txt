@@ -1,0 +1,39 @@
+|NAME:burrito bale
+|DESC:these are delicious and very easy to make! they are very low in calories and are very flavorful! 
+i have also made them for my family and everyone loved them!
+|INGREDIENTS:['lime juice', 'chili powder', 'garlic powder', 'red pepper flakes', 'lettuce leaf', 'chili powder', 
+'sugar', 'fresh lime juice', 'tomatoes', 'green chilies', 'cilantro', 'onion', 'green bell pepper', 'garlic', 'paprika', 
+'salt', 'pico de gallo', 'tortilla chips', 'white candy coating', 'mixed green and red pepper', 'garlic powder', 'pico de gallo', 
+'chopped tomatoes', 'fresh green chilies', 'red chilis', 'green bell pepper', 'lime juice', 'dried oregano', 'red bell pepper', 
+'dry salsa', 'dried black pepper', 'garlic powder', 'white salt', 'fresh ground black pepper', 'to serve: place tortilla chips in a lettuce leaf , 
+and top with tomato , chiles , and onion', 'top with reserved lime juice', 'top with red pepper flakes , cilantro , and chopped tomatoes', 
+'top each tortilla with 1 cup of tortilla chips , 1 / 4 cup of tomatillo mix , 1 / 4 cup of salsa , 1 / 4 cup of pepper colley , 1 / 4 cup of fresh lime juice , 
+1 / 4 cup of chiles , 1 / 4 cup of fresh lime juice , 1 / 8 teaspoon of paprika , 1 / 8 teaspoon of salt', 
+'place tortilla chips on top of tomato mixture , tomato , green chiles , chiles , and onion', 'top with remaining half of the salsa , 
+1 / 4 cup of the pepper colley , 1 / 8 teaspoon of paprika , 1 / 8 teaspoon of salt , 1 / 4 teaspoon of pepper', 'top with remaining salsa , 
+1 / 2 cup of the pepper , and remaining half of the pepper , and remaining half of the chiles', 'cover with remaining tortillas , 
+and let sit at room temperature for 30 minutes', 'when ready to serve , remove tortillas from oven', 'transfer tortilla chips onto serving platter , 
+and serve immediately']<|endoftext|>
+
+|NAME:burrito burrito
+|DESC:i got this recipe from a friend and i've been making it ever since.  
+i've made it with jalapeno pepper and capers and it was fantastic.  
+i just love a little heat and this was very hot.  it was a favorite of mine.  i haven't made it since.
+|INGREDIENTS:['banana', 'tomato sauce', 'cream of chicken soup', 'garlic', 'red bell pepper', 'green bell pepper', 
+'onion', 'chili powder', 'onion powder', 'black pepper', 'garlic cloves', 'pico de gallo', 'fresh lime juice', 'parmesan cheese', 
+'fresh parsley']
+|STEPS:['in a medium saucepan , combine the banana , tomato sauce , and cream of chicken soup', 'bring to a boil', 
+'reduce heat and simmer for 15 minutes', 'remove from heat and stir in the garlic and pepper', 'stir in the chili powder , 
+onion powder , and pepper and simmer for a few minutes', 'when the dressing is thick , stir in the drained tomatoes', 
+'simmer 5 minutes , stirring occasionally', 'remove from heat and stir in the lime juice', 'serve immediately']<|endoftext|>
+
+|NAME:burrito cilantro rice
+|DESC:a very mild and flavorful rice dish.  i got this recipe from a couple of the members of our family.  
+i love to serve this rice with rice pilaf, with a side salad and some rice to soak up the sauce.  
+the rice was so tender and flavorful that i had to throw it down in favor of the rice pilaf.  it's also great with grilled chicken and vegetable steaks.  
+you can serve this with grilled jalapenos and capers as well as with lime juice and parmesan cheese.
+|INGREDIENTS:['rice', 'yellow squash', 'watercress', 'garlic', 'red bell pepper', 'green bell peppe
+r', 'onion', 'ground cumin', 'bay leaf', 
+'garlic clove', 'black pepper', 'salt and pepper', 'fresh cilantro', 'fresh parsley', 'fresh dill']
+|STEPS:['in a large bowl , combine the rice , squash , watercress , and garlic', 'mix well', 'in a large skillet , 
+brown the squash , watercress and garlic over medium-high heat , stirring occasionally , until the squash is just tender , about 3
