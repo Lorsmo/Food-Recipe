@@ -1,3 +1,5 @@
+var numberRecipes =  d3.select("#number-recipes");
+
 function docsearch() {
 
   var inputElement1 = d3.select("#word-search2");
@@ -7,6 +9,10 @@ function docsearch() {
   d3.json(`/readfull/${js_search_term}`).then((response) => {
       console.log('ran search.');
       console.log(response);
+      console.log(response.length);
+
+      numberRecipes.html("");
+      numberRecipes.text(response.length);
 
        var tbody = d3.select(".table").select("tbody");
        tbody.html("");
@@ -23,6 +29,7 @@ function docsearch() {
          });
       });
 
+
       $("tr:not(:has(th))").mouseover(function () {
         $(this).addClass("hover");
         });
@@ -34,7 +41,15 @@ function docsearch() {
     });
 };
 
-
+function objectLength(obj) {
+  var result = 0;
+  for(var prop in obj) {
+    if (obj.hasOwnProperty(prop)) {
+      result++;
+    }
+  }
+  return result;
+}
 
 // jQuery script
 $(document).ready(function(){

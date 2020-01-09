@@ -22,7 +22,7 @@
 
   <div class="container">
     <nav class="navbar p-0 mb-1 navbar-expand-md sticky-top navbar-light" role="navigation">  
-      <a class="navbar-brand pl-3 pr-3 mt-0 ml-5 bg-warning text-dark" href="index.html"><i class="fas fa-utensils"></i> Deep Dishes</a>
+      <a class="navbar-brand pl-3 pr-3 mt-0 ml-5 bg-warning text-dark" href="{{ url_for('home') }}"><i class="fas fa-utensils"></i> Deep Dishes</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsingNavbar">
           <span class="navbar-toggler-icon"></span>
       </button>
@@ -43,7 +43,7 @@
                       <a class="nav-link text-warning" href="recipe.html"><i class="fas fa-greater-than-equal fa-fw"></i> Recipe</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link text-warning" href="team.html"><i class="fas fa-user-friends"></i> Our Team</a>
+                <a class="nav-link text-warning" href="{{ url_for('team') }}"><i class="fas fa-user-friends"></i> Our Team</a>
               </li>
               
           </ul>

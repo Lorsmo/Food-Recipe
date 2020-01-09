@@ -165,3 +165,16 @@ h1 {
     from {opacity: 0;}
     to {opacity:1 ;}
   }
+
+.ui-widget-header {
+    background: orange !important;
+}
+
+.ui-widget.ui-widget-content {
+    border: 3px solid black !important;
+    background: rgba(214, 192, 93, 0.541) !important;
+}
+
+table {
+    background-color: cornsilk !important;
+}
