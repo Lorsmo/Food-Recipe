@@ -24,7 +24,8 @@ import re
 
 # Create an instance of Flask
 app = Flask(__name__)
-MONGO_URL = os.environ.get('MONGO_URL')
+#MONGO_URL = os.environ.get('MONGO_URL')
+MONGO_URL = "mongodb+srv://danh:pJmVMOcSjYNZ87rt@cluster0-zhzxw.mongodb.net/test?retryWrites=true&w=majority"
 
 myclient = pymongo.MongoClient(MONGO_URL, maxPoolSize=50, connect=True)
 # stuff = {'text':'BLANK','count':0}
@@ -60,18 +61,6 @@ def finddocs(search_word):
     return jsonify(list(cursor))
 
 @app.route('/team', methods=['GET', 'POST'])
-def team():
-    if request.method == 'POST':
-        # do stuff when the form is submitted
-
-        # redirect to end the POST handling
-        # the redirect can be to the same route or somewhere else
-        return redirect(url_for('index'))
-
-    # show the form, it wasn't submitted
-    return render_template('team.html')
-
-@app.route('/index', methods=['GET', 'POST'])
 def team():
     if request.method == 'POST':
         # do stuff when the form is submitted

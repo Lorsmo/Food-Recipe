@@ -2,176 +2,170 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Deep Dishes</title>
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    ​<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Deep Dishes</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
+        integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-    
-    <link rel="stylesheet" href="../static/css/style.css">
-  
-
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
 </head>
 
 <body>
+    <nav class="navbar p-1 mb-1 navbar-expand-md sticky-top" role="navigation">
+        <a class="navbar-brand pl-3 pr-3 mt-0 ml-5 bg-warning text-dark fantasy" href="{{ url_for('home') }}"><i
+                class="fas fa-utensils"></i>
+            Deep Dishes</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsingNavbar">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="navbar-collapse collapse" id="collapsingNavbar">
+            <ul class="navbar-nav mr-5 ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link text-warning"><i class="fas fa-project-diagram"></i> Project</a>
+                </li>
 
-  <div class="container">
-    <nav class="navbar p-0 mb-1 navbar-expand-md sticky-top navbar-light" role="navigation">  
-      <a class="navbar-brand pl-3 pr-3 mt-0 ml-5 bg-warning text-dark" href="{{ url_for('home') }}"><i class="fas fa-utensils"></i> Deep Dishes</a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsingNavbar">
-          <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="navbar-collapse collapse" id="collapsingNavbar"> 
-          <ul class="navbar-nav mr-5 ml-auto">
-              <li class="nav-item dropdown">
-                  <a class="nav-link text-warning dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    <i class="fas fa-project-diagram"></i> Project
-                  </a>
-                  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                      <a class="dropdown-item" href="fruits.html"><i class="fas fa-thermometer-full fa-fw"></i> Fruits</a>
-                      <a class="dropdown-item" href="vegetables.html"><i class="fas fa-tint fa-fw"></i> Vegetables</a>
-                      <a class="dropdown-item" href="condiments.html"><i class="fab fa-cloudversify fa-fw"></i> Condiments</a>
-                      
-                  </div>
-              </li>
-              <li class="nav-item">
-                      <a class="nav-link text-warning" href="recipe.html"><i class="fas fa-greater-than-equal fa-fw"></i> Recipe</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link text-warning" href="{{ url_for('team') }}"><i class="fas fa-user-friends"></i> Our Team</a>
-              </li>
-              
-          </ul>
-      </div>
+                <li class="nav-item">
+                    <a class="nav-link text-warning" href="{{ url_for('team') }}"><i class="fas fa-user-friends"></i>
+                        Our Team</a>
+                </li>
+
+            </ul>
+        </div>
     </nav>
-    <div class="row">
-        <div class="col-md-6">
-            <div class="container-profile border p-2 m-5">
-                <img src="../static/images/team/Laurent.jpeg" class="profile float-left m-2" alt="Laurent">
-                <div class="h4 text-white text-center">Laurent Nedelec</div>
-                <ul class="list-inline text-center">
-                    <li class="list-inline-item">
-                        <a href="mailto: nedeleclaurent@gmail.com" title="nedeleclaurent@gmail.com">
-                            <i class="h1 fas fa-envelope-square logo"></i>
-                        </a>
-                    </li>
-                    <li class="list-inline-item">
-                        <a href="https://www.linkedin.com/in/laurent-nedelec" target="_blank">
-                            <i class="h1 fab fa-linkedin logo"></i>
-                        </a>
-                    </li>
-                    <li class="list-inline-item">
-                        <a href="https://github.com/Lorsmo" target="_blank">
-                            <i class="h1 fab fa-github logo"></i>
-                        </a>
-                    </li>
-                </ul>
+    <div class="container">
+
+        <div class="row">
+
+            <div class="col-md-6">
+                <div class="container-profile border p-2 m-5">
+                    <img src="../static/images/team/Daniel.jpeg" class="profile float-left m-2" alt="Daniel">
+                    <div class="h4 text-white text-center">Daniel Hesse</div>
+                    <ul class="list-inline text-center">
+                        <li class="list-inline-item">
+                            <a href="mailto: dan.hesse@hotmail.com" title="dan.hesse@outlook.com">
+                                <i class="h1 fas fa-envelope-square logo"></i>
+                            </a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a href="https://www.linkedin.com/in/dhesse84/" target="_blank">
+                                <i class="h1 fab fa-linkedin logo"></i>
+                            </a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a href="https://github.com/dhesse84" target="_blank">
+                                <i class="h1 fab fa-github logo"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
             </div>
-    
-        </div>
-        <div class="col-md-6">
-            <div class="container-profile border p-2 m-5">
-                <img src="../static/images/team/Daniel.jpeg" class="profile float-left m-2" alt="Daniel">
-                <div class="h4 text-white text-center">Daniel Hesse</div>
-                <ul class="list-inline text-center">
-                    <li class="list-inline-item">
-                        <a href="mailto: dan.hesse@hotmail.com" title="dan.hesse@outlook.com">
-                            <i class="h1 fas fa-envelope-square logo"></i>
-                        </a>
-                    </li>
-                    <li class="list-inline-item">
-                        <a href="https://www.linkedin.com/in/dhesse84/" target="_blank">
-                            <i class="h1 fab fa-linkedin logo"></i>
-                        </a>
-                    </li>
-                    <li class="list-inline-item">
-                        <a href="https://github.com/dhesse84" target="_blank">
-                            <i class="h1 fab fa-github logo"></i>
-                        </a>
-                    </li>
-                </ul>
-            </div>
-    
-        </div>
-    
-    </div>
-    <div class="row">
-        <div class="col-md-6">
-            <div class="container-profile border p-2 m-5">
-                <img src="../static/images/team/Sammy.jpeg" class="profile float-left m-2" alt="Sammy">
-                <div class="h4 text-white text-center">Sammi (Peiyun) Huang</div>
-                <ul class="list-inline text-center">
-                    <li class="list-inline-item">
-                        <a href="mailto: peiyun_hng@yahoo.com" title="peiyun_hng@yahoo.com">
-                            <i class="h1 fas fa-envelope-square logo"></i>
-                        </a>
-                    </li>
-                    <li class="list-inline-item">
-                        <a href="https://www.linkedin.com/in/sammi-huang-3b179295/" target="_blank">
-                            <i class="h1 fab fa-linkedin logo"></i>
-                        </a>
-                    </li>
-                    <li class="list-inline-item">
-                        <a href="https://github.com/peiyunhuang" target="_blank">
-                            <i class="h1 fab fa-github logo"></i>
-                        </a>
-                    </li>
-                </ul>
+            <div class="col-md-6">
+                <div class="container-profile border p-2 m-5">
+                    <img src="../static/images/team/Sammy.jpeg" class="profile float-left m-2" alt="Sammy">
+                    <div class="h4 text-white text-center">Sammi (Peiyun) Huang</div>
+                    <ul class="list-inline text-center">
+                        <li class="list-inline-item">
+                            <a href="mailto: peiyun_hng@yahoo.com" title="peiyun_hng@yahoo.com">
+                                <i class="h1 fas fa-envelope-square logo"></i>
+                            </a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a href="https://www.linkedin.com/in/sammi-huang-3b179295/" target="_blank">
+                                <i class="h1 fab fa-linkedin logo"></i>
+                            </a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a href="https://github.com/peiyunhuang" target="_blank">
+                                <i class="h1 fab fa-github logo"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
             </div>
 
         </div>
-        <div class="col-md-6">
-            <div class="container-profile border p-2 m-5">
-                <img src="../static/images/team/David.jpeg" class="profile float-left m-2" alt="David">
-                <div class="h4 text-white text-center">David Kaatmann</div>
-                <ul class="list-inline text-center">
-                    <li class="list-inline-item">
-                        <a href="mailto: david.kaatmann@gmail.com" title="david.kaatmann@gmail.com">
-                            <i class="h1 fas fa-envelope-square logo"></i>
-                        </a>
-                    </li>
-                    <li class="list-inline-item">
-                        <a href="https://www.linkedin.com/in/david-kaatmann-865a38189/" target="_blank">
-                            <i class="h1 fab fa-linkedin logo"></i>
-                        </a>
-                    </li>
-                    <li class="list-inline-item">
-                        <a href="https://github.com/setsumei1974" target="_blank">
-                            <i class="h1 fab fa-github logo"></i>
-                        </a>
-                    </li>
-                </ul>
+        <div class="row">
+
+            <div class="col-md-6">
+                <div class="container-profile border p-2 m-5">
+                    <img src="../static/images/team/David.jpeg" class="profile float-left m-2" alt="David">
+                    <div class="h4 text-white text-center">David Kaatmann</div>
+                    <ul class="list-inline text-center">
+                        <li class="list-inline-item">
+                            <a href="mailto: david.kaatmann@gmail.com" title="david.kaatmann@gmail.com">
+                                <i class="h1 fas fa-envelope-square logo"></i>
+                            </a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a href="https://www.linkedin.com/in/david-kaatmann-865a38189/" target="_blank">
+                                <i class="h1 fab fa-linkedin logo"></i>
+                            </a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a href="https://github.com/setsumei1974" target="_blank">
+                                <i class="h1 fab fa-github logo"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+            <div class="col-md-6">
+                <div class="container-profile border p-2 m-5">
+                    <img src="../static/images/team/Laurent.jpeg" class="profile float-left m-2" alt="Laurent">
+                    <div class="h4 text-white text-center">Laurent Nedelec</div>
+                    <ul class="list-inline text-center">
+                        <li class="list-inline-item">
+                            <a href="mailto: nedeleclaurent@gmail.com" title="nedeleclaurent@gmail.com">
+                                <i class="h1 fas fa-envelope-square logo"></i>
+                            </a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a href="https://www.linkedin.com/in/laurent-nedelec" target="_blank">
+                                <i class="h1 fab fa-linkedin logo"></i>
+                            </a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a href="https://github.com/Lorsmo" target="_blank">
+                                <i class="h1 fab fa-github logo"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
             </div>
 
         </div>
-    
-    </div>
 
-    <!-- begin wwww.htmlcommentbox.com -->
- <div id="HCB_comment_box"><a href="http://www.htmlcommentbox.com">Widget</a> is loading comments...</div>
- <link rel="stylesheet" type="text/css" href="https://www.htmlcommentbox.com/static/skins/bootstrap/twitter-bootstrap.css?v=0" />
- <script type="text/javascript" id="hcb"> /*<!--*/ if(!window.hcb_user){hcb_user={};} (function(){var s=document.createElement("script"), l=hcb_user.PAGE || (""+window.location).replace(/'/g,"%27"), h="https://www.htmlcommentbox.com";s.setAttribute("type","text/javascript");s.setAttribute("src", h+"/jread?page="+encodeURIComponent(l).replace("+","%2B")+"&mod=%241%24wq1rdBcg%24drd6DIjEt2A2.s4PFD.rm."+"&opts=16862&num=10&ts=1578441433498");if (typeof s!="undefined") document.getElementsByTagName("head")[0].appendChild(s);})(); /*-->*/ </script>
-<!-- end www.htmlcommentbox.com -->
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script>
+            AOS.init();
+        </script>
+        <script src="{{ url_for('static', filename='js/app.js') }}"></script>
 
-  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-  <script>
-    AOS.init();
-  </script>
-  <script src="../static/js/app.js"></script>
-  
-  
-  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.5.0/d3.js"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-    crossorigin="anonymous"></script>
-  <script src="https://d3js.org/d3.v5.min.js"></script>
-  
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.5.0/d3.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+            integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+            crossorigin="anonymous"></script>
+        <script src="https://d3js.org/d3.v5.min.js"></script>
+
 
 </body>
 

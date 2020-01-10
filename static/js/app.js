@@ -89,8 +89,18 @@ $(document).ready(function(){
 
 });
 
+// When the user clicks on <div>, open the popup
+function myFunction(aaa) {
+  var popup = document.getElementById(aaa);
+  popup.classList.toggle("show"); 
+}
+
+  
 
 
+$('.carousel').carousel({
+  interval: 4000
+})
 
 
 

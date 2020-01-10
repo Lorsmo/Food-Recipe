@@ -12,64 +12,54 @@
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
     integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
- 
+
 
   <link rel="stylesheet" href="../static/css/style.css">
 
-    <!-- Inset scroll box made with CSS file -->
-     <!-- ----  CSS -->
-     <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+  <!-- Inset scroll box made with CSS file -->
+  <!-- ----  CSS -->
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
 
-    <!--<link rel="stylesheet" type="text/css" href="static/css/style.css">-->
+  <!--<link rel="stylesheet" type="text/css" href="static/css/style.css">-->
 
-    <!-- jQuery UI stylesheet -->
-    <link rel="stylesheet" href="https://ajax.aspnetcdn.com/ajax/jquery.ui/1.12.1/themes/blitzer/jquery-ui.css">
-    <!--<link rel="stylesheet" href="https://cdn.datatables.net/1.10.20/css/jquery.dataTables.min.css">-->
+  <!-- jQuery UI stylesheet -->
+  <link rel="stylesheet" href="https://ajax.aspnetcdn.com/ajax/jquery.ui/1.12.1/themes/blitzer/jquery-ui.css">
+  <!--<link rel="stylesheet" href="https://cdn.datatables.net/1.10.20/css/jquery.dataTables.min.css">-->
 
-    <!-- jQuery UI -->
-    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
-    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  <!-- jQuery UI -->
+  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 </head>
 
 <body>
 
+
+  <nav class="navbar p-1 mb-1 navbar-expand-md sticky-top" role="navigation">
+    <a class="navbar-brand pl-3 pr-3 mt-0 ml-5 bg-warning text-dark fantasy" href="{{ url_for('home') }}"><i
+        class="fas fa-utensils"></i>
+      Deep Dishes</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsingNavbar">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="navbar-collapse collapse" id="collapsingNavbar">
+      <ul class="navbar-nav mr-5 ml-auto">
+        <li class="nav-item">
+          <a class="nav-link text-warning"><i class="fas fa-project-diagram"></i> Project</a>
+        </li>
+       
+        <li class="nav-item">
+          <a class="nav-link text-warning" href="{{ url_for('team') }}"><i class="fas fa-user-friends"></i> Our Team</a>
+        </li>
+
+      </ul>
+    </div>
+  </nav>
   <div class="container">
-    <nav class="navbar p-0 mb-1 navbar-expand-md sticky-top navbar-light" role="navigation">
-      <a class="navbar-brand pl-3 pr-3 mt-0 ml-5 bg-warning text-dark" href="{{ url_for('home') }}"><i class="fas fa-utensils"></i>
-        Deep Dishes</a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsingNavbar">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="navbar-collapse collapse" id="collapsingNavbar">
-        <ul class="navbar-nav mr-5 ml-auto">
-          <li class="nav-item dropdown">
-            <a class="nav-link text-warning dropdown-toggle" href="#" id="navbarDropdown" role="button"
-              data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              <i class="fas fa-project-diagram"></i> Project
-            </a>
-            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <a class="dropdown-item" href="fruits.html"><i class="fas fa-thermometer-full fa-fw"></i> Fruits</a>
-              <a class="dropdown-item" href="vegetables.html"><i class="fas fa-tint fa-fw"></i> Vegetables</a>
-              <a class="dropdown-item" href="condiments.html"><i class="fab fa-cloudversify fa-fw"></i> Condiments</a>
-
-            </div>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link text-warning" href="recipe.html"><i class="fas fa-greater-than-equal fa-fw"></i>
-              Recipe</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link text-warning" href="{{ url_for('team') }}"><i class="fas fa-user-friends"></i> Our Team</a>
-          </li>
-
-        </ul>
-      </div>
-    </nav>
     <div class="row">
 
       <div class="col-md-12 text-center text-white p-5">
         <div data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
-          <h1>Deep Dishes</h1>
+          <div class="h1 title fantasy">Deep Dishes</div>
         </div>
         <hr>
         <div data-aos="fade-up" data-aos-anchor-placement="center-bottom" data-aos-duration="2000">
@@ -80,7 +70,7 @@
 
     </div>
 
-    <!-- <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+    <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
       <div class="carousel-inner">
         <div class="carousel-item active">
           <img src="../static/images/bean.jpg" class="d-block w-25" alt="Beans">
@@ -95,205 +85,208 @@
           <img src="../static/images/pmdt.jpg" class="d-block w-25" alt="pmdt">
         </div>
       </div>
-    </div> -->
+    </div>
 
 
     <div class="col-md-12">
       <div id="tabs">
-          <ul>
-            <li><a href="#tabs-1" onclick="plistsetup()">Tab1</a></li>
-            <li><a href="#tabs-2">Tab2</a></li>
-            <li><a href="#tabs-3">View Recipes</a></li>
-          </ul> 
+        <ul>
+          <li><a href="#tabs-1" onclick="plistsetup()">Tab1</a></li>
+          
+          <li><a href="#tabs-3">View Recipes</a></li>
+        </ul>
         <div id="tabs-1">
           <div class="card" style="width: 35rem;">
-              <div class="card-body">
-                  <p class="card-text">Select a President's name to generate a Word Cloud from their collection of speeches.</p>
-              </div>
+            <div class="card-body">
+              <p class="card-text">Select a President's name to generate a Word Cloud from their collection of speeches.
+              </p>
+            </div>
           </div>
-      <row class="row">
-          <div class="col-sm-12 col-lg-3">
+          <row class="row">
+            <div class="col-sm-12 col-lg-3">
               <aside class="filters">
-                  <div class="panel panel-default">
-                      <div class="panel-heading">President Lookup</div>
-                      <div class="panel-body">
-                          <form>
-                              <div class="form-group">
-                                      <h5>Select President:</h5>
-                                      <select id="sel_div" onchange="cloudsearch(this.value)"></select>
-                              </div>
-                          </form>
-                      </div>
-                  </div>
-              </aside>
-          </div>
-          <div class="col-sm-12 col-lg-9">
-              <div id="cloud"></div>
-          </div>
-      </row>
-      </div>
-     
-      
-
-
-      <div id="tabs-2">
-              <div class="card" style="width: 35rem;">
-                  <div class="card-body">
-                      <p class="card-text">Enter a specific word to see how frequently each President used that word in their speeches.</p>
-                  </div>
-              </div>
-        <row class="row">
-          <div class="col-sm-12 col-lg-3">
-              <aside class="filters">
-                  <div class="panel panel-default">
-                      <div class="panel-heading">Word Lookup</div>
-                      <div class="panel-body">
-                          <form>
-                              <div class="form-group">
-                               
-                                  <input class="form-control" id="word-search1" type="text" placeholder="Enter a word">
-                              </div>
-                              <button id="filter-btn" type="button" class="btn btn-default" onclick="barsearch()">Search</button>
-                          </form>
-                      </div>
-                  </div>
-              </aside>
-          </div>
-          <div class="col-sm-12 col-lg-9">
-              <div id="bar-chart"></div>
-          </div>
-        </row>
-      </div>
-
-
-
-      <div id="tabs-3">
-        <div class="row">
-          <div class="col-sm-12 col-lg-3">
-            <div class="panel panel-default">
-              <form>
-                  <div style="margin:3em;">
+                <div class="panel panel-default">
+                  <div class="panel-heading"></div>
+                  <div class="panel-body">
                     <form>
                       <div class="form-group">
-                          <input class="form-control" id="word-search2" type="text" placeholder="Enter a word.">
+                        <h5></h5>
+                        <select id="sel_div" onchange="cloudsearch(this.value)"></select>
                       </div>
-                      <button id="filter-btn" type="button" class="btn btn-default" onclick="docsearch()">Search</button>
-                  </form>
+                    </form>
+                  </div>
+                </div>
+              </aside>
+            </div>
+            <div class="col-sm-12 col-lg-9">
+              <div id="cloud"></div>
+            </div>
+          </row>
+        </div>
 
-                  <p>Number Recipes:</p>
-                  <p id="number-recipes"></p>              
+        <div id="tabs-3">
+          <div class="row">
+            <div class="col-sm-12 col-lg-3">
+              <div class="panel panel-default">
+                <form>
+                  <div>
+                    <form>
+                      <div class="form-group">
+                        <input class="form-control" id="word-search2" type="text" placeholder="Enter a word.">
+                      </div>
+                      <button id="filter-btn" type="button" class="btn bg-warning btn-default"
+                        onclick="docsearch()">Search</button>
+                    </form>
+
+
+                    <p>Number recipes:</p>
+                    <p id="number-recipes"></p>
+
+
                     <!-- <div class="form-group">
                       <input class="form-control" id="word-search2" type="text" placeholder="Enter a word.">
                     </div>
 
                     <button id="filter-btn" type="button" class="btn btn-default" onclick="docsearch()">Search</button> -->
+                  </div>
               </div>
             </div>
-          </div>
-          <div class="docsList" style="height: 500px; overflow: auto;">
-            <div id="table-area" class="table-content-class">
-                    <table id="myTable" class="table table-striped table-bordered table-sm table-hover center gfh">
-                            <thead>
-                                <tr>
-                                    <th>Name</th>
-                                    <th>Description</th>
-                                    <th>Ingredients</th>
-                                    <th>Steps</th>
-                                </tr>
-                            </thead>
-                            <tbody class="gfg"></tbody>
-                    </table>
-                </div>
+            <div class="docsList" style="height: 500px; overflow: auto;">
+              <div id="table-area" class="table-content-class">
+                <table id="myTable"
+                  class="table table-warning text-capitalize table-striped table-bordered table-sm table-hover center gfh">
+                  <thead>
+                    <tr>
+                      <th>Name</th>
+                      <th>Description</th>
+                      <th>Ingredients</th>
+                      <th>Steps</th>
+                    </tr>
+                  </thead>
+                  <tbody class="gfg"></tbody>
+                </table>
+              </div>
             </div>
 
-  </div>
-
-  <!-- <div class="row">
-    <div class="col-lg-4 col-sm-6" data-aos="flip-left">
-      <a class="portfolio-box" href="fruits.html">
-        <img class="img-fluid" src="../static/images/recipes_selected/chicken_curry.jpg" alt="">
-        <div class="portfolio-box-caption">
-          <div class="project-category text-dark-50">
-            Sammy
-          </div>
-          <div class="project-name">
-            Chicken Curry
           </div>
         </div>
-      </a>
-    </div>
-    <div class="col-lg-4 col-sm-6">
-      <a class="portfolio-box" href="img/portfolio/fullsize/2.jpg">
-        <img class="img-fluid" src="../static/images/recipes_selected/spanish_rice.jpg" alt="">
-        <div class="portfolio-box-caption">
-          <div class="project-category text-dark-50">
-            David
-          </div>
-          <div class="project-name">
-            Spanish Rice Pilaf
-          </div>
-        </div>
-      </a>
-    </div>
-    <div class="col-lg-4 col-sm-6">
-      <a class="portfolio-box" href="img/portfolio/fullsize/3.jpg">
-        <img class="img-fluid" src="../static/images/recipes_selected/muffins.jpeg" alt="">
-        <div class="portfolio-box-caption">
-          <div class="project-category text-dark-50">
-            Laurent
-          </div>
-          <div class="project-name">
-            Banana Ginger Muffin
-          </div>
-        </div>
-      </a>
-    </div>
-  </div>
-  <div class="row"> -->
-
-    <!-- <div class="col-lg-8">
-      <div class="popup" onclick="myFunction()">Click me!
-        <span class="popuptext" id="myPopup">Popup text...</span>
       </div>
-    </div>
-
-    <div class="col-lg-4 ">
-      <div class="box bg-white p-0 pb-2">
-        <div class="h4 mb-2 text-white bg-warning p-2 text-center">Our Selections</div>
-        <a class="portfolio-box" href="img/portfolio/fullsize/3.jpg">
-          <img class="float-left img-fluid" src="../static/images/recipes_selected/chicken_curry.jpg" width=45%
-            alt="Chicken Curry">
-          <div class="portfolio-box-caption">
-            <div class="project-category text-dark-50">
-              Laurent
-            </div>
-            <div class="project-name">
-              Chicken Curry
-            </div>
-          </div>
-        </a>
-        <a href="index.html" title="Ouverture d'une nouvelle fenêtre popup"
- onclick="window.open(this.href,'nom_Popup','​height=400 , width=400 ,location=no ,resizable=yes ,scrollbars=yes');return false;">+</a></div>
-        <a href="spanish_rice.html" title="Ouverture d'une nouvelle fenêtre popup"
-        onclick="window.open(this.href,'nom_Popup','​height=400 , width=400 ,location=no ,resizable=yes ,scrollbars=yes');return false;">
-          <img class="img-fluid" src="../static/images/recipes_selected/spanish_rice.jpg" width=45% alt="Cloud Map">
-        </a>
-        <a href="#.html">
-          <img class="float-left img-fluid target" src="../static/images/recipes_selected/muffins.jpeg" width=45%
-            alt="Humidity Map">
-        </a>
-        <a href="#.html">
-          <img class="img-fluid" src="../static/images/recipes_selected/spanish_rice.jpg" width=45% alt="Wind Map">
-        </a>
+      <div class="row">
+        <div class="col-md-12">
+          <div class="h2 text-center bg-dark text-danger">Our Favorites</div>
+        </div>
       </div>
-    </div> -->
+      <div class="row">
+        <div class="col-lg-2 col-sm-0"></div>
+        <div class="col-lg-4 col-sm-6">
+          <a class="portfolio-box popup" onclick="myFunction('myPopup4')">
+            <span class="popuptext" id="myPopup4">NAME: Chicken Curry<br>
+              DESC:from "the complete vegetarian cookbook", this is an absolutely delicious recipe that i made tonight
+              and it is very satisfying. it has plenty of bright vegetables and the spices compliment the other flavors
+              of the dish.<br>
+              INGREDIENTS:['onions', 'fresh ginger', 'garlic cloves', 'ground cumin', 'ground ginger', 'turmeric', 'red
+              pepper flakes', 'ground coriander', 'ground cayenne pepper',
+              'ground cinnamon', 'ground cumin', 'ground ginger', 'salt', 'turmeric', 'ground cayenne pepper', 'pepper',
+              'coriander', 'cumin seed', 'paprika', 'curry powder', 'cayenne pepper',
+              'red potatoes', 'chicken broth', 'curry powder', 'cilantro leaf', 'lemon juice', 'fresh cilantro']<br>
+              STEPS:['in a large nonstick skillet , cook the onions and ginger in butter over medium heat until golden ,
+              about 4 minutes', 'add the garlic and cook 1 minute more',
+              'stir in the cumin , ginger , turmeric , red pepper flakes , coriander , cayenne , cinnamon , cumin seeds
+              , paprika , cumin , cumin , and curry powder , and cook 1 minute',
+              'stir in the potatoes , chicken broth , curry powder , cilantro , and lemon juice', 'bring to a boil ,
+              cover , and simmer until the potatoes are tender , about 20 minutes',
+              'stir in the cilantro and cook 5 minutes', 'if the curry is too thick , thin with 1 / 4 cup of water',
+              'stir in the lemon juice and cilantro']</span>
+            <img class="img-fluid" src="../static/images/recipes_selected/chicken_curry.jpg" alt="">
+            <div class="portfolio-box-caption">
+              <div class="project-category text-dark-50">
+                Sammi
+              </div>
+              <div class="project-name">
+                Chicken Curry
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col-lg-4 col-sm-6">
+          <a class="portfolio-box popup" onclick="myFunction('myPopup3')">
+            <span class="popuptext" id="myPopup3">NAME: Spanish Rice Pilaf<br>
+              DESC:a delicious side dish that combines two of my favourite foods, rice and lentils.<br>
+              INGREDIENTS:['onion', 'white rice', 'lentils', 'water', 'salt', 'pepper', 'pecorino romano cheese', 'sour
+              cream']<br>
+              STEPS:['cook rice according to package instructions', 'while rice is cooking , prepare lentils according
+              to package instructions', 'heat a large nonstick skillet on stovetop', 'add onion and saute until softened
+              , about 3 minutes', 'add lentils and water , cover and cook 10 minutes', 'add salt , pepper , and cheese ,
+              tossing until cheese is melted', 'serve with sour cream and additional grated cheese']</span>
+            <img class="img-fluid" src="../static/images/recipes_selected/spanish_rice.jpg" alt="">
+            <div class="portfolio-box-caption">
+              <div class="project-category text-dark-50">
+                David
+              </div>
+              <div class="project-name">
+                Spanish Rice Pilaf
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col-lg-2 col-sm-0"></div>
+      </div>
+      <div class="row">
+        <div class="col-lg-2 col-sm-0"></div>
+        <div class="col-lg-4 col-sm-6">
+          <a class="portfolio-box popup" onclick="myFunction('myPopup1')">
+            <span class="popuptext" id="myPopup1">NAME: Banana Ginger Muffin<br>
+              DESC: a delicious, easy, healthy, and tasty recipe that i made last night for breakfast. i used brown
+              sugar, ginger, and cinnamon. and i used the muffin tin that comes with the gingerbread recipes. the top of
+              a muffin was moist, and the middle was soft. i garnished with chopped cherries, sliced banana, and a
+              banana slice. they were great, and i think you could substitute splenda for the sugar and cinnamon.<br>
+              INGREDIENTS: whole wheat pastry flour, brown sugar, baking soda, ground cinnamon, salt’, ground nutmeg,
+              ‘ground ginger’, ‘ground gingerroot’, ‘eggs’, ‘canola oil’, ‘bananas’, ‘baking soda’, ‘cinnamon sugar’,
+              ‘apple cider vinegar’, ‘granulated sugar’, ‘cinnamon’, ‘gingerroot’, ‘nutmeg’<br>
+              STEPS: preheat oven to 350’, ‘pour flour into a large bowl’, ‘in small bowl , combine sugar , baking soda
+              , cinnamon , nutmeg , ginger , and ginger’, ‘in large bowl , combine eggs , oil , bananas , baking soda ,
+              sugar , vinegar , or honey , cinnamon , and ginger’, ‘stir well’, ‘add dry ingredients to wet’, ‘gently
+              fold in cherries and banana slices’, ‘fill muffin cups 2 / 3 full’, ‘bake 15 minutes or until done’, ‘cool
+              on wire rack for 10 minutes’, ‘remove muffins from tin and cool completely on wire rack’</span>
+            <img class="img-fluid" src="../static/images/recipes_selected/muffins.jpeg" alt="">
+            <div class="portfolio-box-caption">
+              <div class="project-category text-dark-50">
+                Laurent
+              </div>
+              <div class="project-name">
+                Banana Ginger Muffin
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col-lg-4 col-sm-6">
+          <a class="portfolio-box popup" onclick="myFunction('myPopup2')">
+            <span class="popuptext" id="myPopup2">NAME: Brown Sugar Brownies<br>
+              DESC:these brownies are good!<br>
+              INGREDIENTS:['all-purpose flour', 'brown sugar', 'baking powder', 'baking soda', 'salt', 'butter',
+              'granulated sugar', 'eggs', 'vanilla', 'semi-sweet chocolate chips'<br>
+              STEPS:['combine flour , brown sugar , baking powder , baking soda , and salt', 'in a separate bowl , beat butter ,
+              granulated sugar , eggs , and vanilla', 'add flour mixture and chocolate chips', 'mix until just moist',
+              'drop by heaping tablespoonfuls onto ungreased cookie sheet', 'bake at 350 for 10-12 minutes or until lightly browned']</span>
+            <img class="img-fluid" src="../static/images/recipes_selected/Brown-Sugar-Brownies.jpg" alt="">
+            <div class="portfolio-box-caption ">
+
+              <div class="project-category text-dark-50">
+                Daniel
+              </div>
+              <div class="project-name">
+                Brown Sugar Brownies
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col-lg-2 col-sm-0"></div>
+      </div>
 
 
+    </div>
   </div>
   </div>
-  </div>
-
-  <button type="button" id="btnAdd" value="Add" onclick="addItem()"></button>
 
   </div>
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
@@ -309,10 +302,10 @@
     integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
     crossorigin="anonymous"></script>
    -->
-   <!-- <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+  <!-- <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
     integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
     crossorigin="anonymous"></script> -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
     integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
     crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
